@@ -1,8 +1,9 @@
 {
   "pages":[
     "pages/my/doctorRes/doctorRes",
-    "pages/my/doctor/doctor",
     "pages/case/case",
+   
+    "pages/my/doctor/doctor",
     "pages/chat/chat",
    
     

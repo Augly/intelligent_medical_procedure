@@ -235,3 +235,24 @@ line-height:47rpx;
 margin-top: 36rpx;
 
 }
+
+.itemlist{
+  width: 100%;
+  display: flex;
+  margin-top: 30rpx;
+}
+
+
+.item_logo{
+  width: 30rpx;
+  height: 30rpx;
+  background-color: red;
+}
+
+.item_res{
+  margin-left: 30rpx;
+  width: 600rpx;
+  font-size:32rpx;
+font-weight:normal;
+color:rgba(153,153,153,1);
+}
