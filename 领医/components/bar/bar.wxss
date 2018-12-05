@@ -1,0 +1,50 @@
+.bar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 300;
+  width: 750rpx;
+  height: 96rpx;
+  border-top: 2rpx solid rgba(205,205,205,1);
+  overflow: hidden;
+}
+.bar-height{
+  height: 96rpx;
+}
+.bar-item{
+  width: 33.333333%;
+  height: 96rpx;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 64.5rpx;
+  background-repeat: no-repeat;
+  background-size: auto 46rpx;
+  background-position: center 11.5rpx;
+  text-align: center;
+  line-height: 20rpx;
+  font-size:20rpx;
+  font-family:PingFang-SC-Bold;
+  font-weight:bold;
+  color:rgba(153,153,153,1);
+}
+.bar-item:nth-child(1){
+  background-image:url(https://lingyiil.dazhu-ltd.cn/public/static/program/images/qie10.png);
+}
+.bar-item:nth-child(2){
+  background-image:url(https://lingyiil.dazhu-ltd.cn/public/static/program/images/qie11.png);
+}
+.bar-item:nth-child(3){
+  background-image:url(https://lingyiil.dazhu-ltd.cn/public/static/program/images/qie12.png);
+}
+.bar-item-hover{
+  color:rgba(99,223,197,1);
+}
+.bar-item-hover:nth-child(1){
+  background-image:url(https://lingyiil.dazhu-ltd.cn/public/static/program/images/qie18.png);
+}
+.bar-item-hover:nth-child(2){
+  background-image:url(https://lingyiil.dazhu-ltd.cn/public/static/program/images/qie19.png);
+}
+.bar-item-hover:nth-child(3){
+  background-image:url(https://lingyiil.dazhu-ltd.cn/public/static/program/images/qie20.png);
+}

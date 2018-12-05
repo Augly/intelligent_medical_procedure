@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "backgroundColor": "#eeeeee",
+  "usingComponents": {
+    "navigation": "/components/navigation/navigation",
+    "left-smooth": "/components/left-smooth/left-smooth"
+  }
+}

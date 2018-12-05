@@ -1,0 +1,6 @@
+<view class="bar">
+  <navigator url="/pages/index/index"><view class="bar-item bar-item-hover">首页</view></navigator> 
+  <navigator url="/pages/index/case/case"><view class="bar-item">病历</view></navigator>
+  <navigator url="/pages/user/user"><view class="bar-item">我的</view></navigator>
+</view>
+<!-- <view class="bar-height"></view> -->

@@ -1,0 +1,45 @@
+<!-- pages/index/chat/chat.wxml -->
+<!-- <view class='head'>
+  <image class='listLog' src="{{getInfo.avatar}}"></image>
+  <view class='listRes'>
+    <view class='res_title'>
+      {{getInfo.nickname}}
+      <i class='iconfont icon-renzhengguanli'></i>
+    </view>
+    <view class='res_mintitle'>
+      {{getInfo.last_time?'最近回复:'+getInfo.last_time:'很高兴为您服务'}}
+      <span>|</span>
+      {{getInfo.provice}}
+    </view>
+  </view>
+  <view class='close' bindtap='close'>
+    <i class="iconfont icon-guanji"></i>
+    <view class='close_title'>结束咨询</view>
+  </view>
+</view> -->
+<scroll-view style='width:100%;height:{{myheight}}px' scroll-y scroll-into-view="a{{myTop}}" scroll-with-animation>
+  <view class='list' wx:for="{{chatList}}" wx:key="index">
+    <view class='time' wx:if="{{index%10==0}}">{{item.time}}</view>
+    <view class='chatData' id='a{{index}}'>
+      <view class='left' wx:if="{{item.id!=myId}}">
+        <image class='logo' src='{{item.avatar}}'></image>
+        <view class='left_main' wx:if="{{item.img==''}}">{{item.content}}</view>
+        <view class='left_main' wx:else>
+          <image class='main_img' src='{{item.img}}'  mode='widthFix'></image>
+        </view>
+      </view>
+      <view class='right' wx:else>
+        <view class='right_main' wx:if="{{item.img==''}}">{{item.content}}</view>
+        <view class='right_main' wx:else>
+          <image class='main_img' src='{{item.img}}'  mode='widthFix'></image>
+        </view>
+        <image class='logo' src='{{item.avatar}}'></image>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<view class='ipt'>
+  <image class='sendImg' src='/utils/images/add.png' bindtap='addImg'></image>
+  <input class='sendIpt' placeholder='请输入...' placeholder-class='ph' bindinput='getContent' value='{{textContent}}'></input>
+  <view class='send' bindtap='send'>发送</view>
+</view>

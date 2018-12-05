@@ -1,0 +1,19 @@
+<view class="navigation">
+  <template is="{{leftType == 1 ? 'homepage' : 'back'}}" />
+  <view class="navigation-center">
+    <slot></slot>
+  </view>
+</view>
+<!-- <view class="navigation-height"></view> -->
+
+<template name="homepage">
+  <navigator url="/pages/index/switchover" hover-class="navigator-hover">
+    <view class="navigation-left">切换诊所</view>
+  </navigator>
+</template>
+
+<template name="back">
+  <navigator open-type="navigateBack" hover-class="navigator-hover">
+    <view class="navigation-left navigation-back"></view>
+  </navigator>
+</template>
