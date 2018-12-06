@@ -1,9 +1,14 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/selsectPatient/selsectPatient",
+    "pages/lookCase/lookCase",
+    "pages/prescription/prescription",
+    "pages/Report/Report",
     "pages/my/doctorRes/doctorRes",
     "pages/my/my",
     "pages/case/case",
+    
     "pages/my/doctor/doctor",
     "pages/chat/chat",
    

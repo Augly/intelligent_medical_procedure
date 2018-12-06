@@ -1,4 +1,4 @@
-// pages/case/case.js
+// pages/lookCase/lookCase.js
 Page({
 
   /**
@@ -63,17 +63,17 @@ Page({
   onShareAppMessage: function () {
 
   },
-  lookCase(){
+  report(){
     wx.navigateTo({
-      url: '/pages/lookCase/lookCase',
+      url: '/pages/Report/Report',
       success: function(res) {},
       fail: function(res) {},
       complete: function(res) {},
     })
   },
-  select(){
+  prescription(){
     wx.navigateTo({
-      url: '/pages/selsectPatient/selsectPatient',
+      url: '/pages/prescription/prescription',
       success: function(res) {},
       fail: function(res) {},
       complete: function(res) {},

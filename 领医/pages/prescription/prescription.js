@@ -1,4 +1,4 @@
-// pages/case/case.js
+// pages/prescription/prescription.js
 Page({
 
   /**
@@ -63,20 +63,12 @@ Page({
   onShareAppMessage: function () {
 
   },
-  lookCase(){
+  tochat() {
     wx.navigateTo({
-      url: '/pages/lookCase/lookCase',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
-    })
-  },
-  select(){
-    wx.navigateTo({
-      url: '/pages/selsectPatient/selsectPatient',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
+      url: '/pages/chat/chat',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
     })
   }
 })

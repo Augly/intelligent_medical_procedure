@@ -4,18 +4,23 @@
 
   <view class="switchover">
     <view class="switchover-item switchover-head">
-      <view class="switchover-img"><image src="{{ImageHost}}/zi02.png"></image></view>
+      <view class="switchover-img">
+        <image src="{{ImageHost}}/zi02.png"></image>
+      </view>
       <view class="switchover-text">
-        <view class="switchover-headline switchover-headline-head"><view class="switchover-headline-s">当前诊所：</view>{{clinic_name}}</view>
-        <view class="switchover-subhead switchover-subhead-head"><view class="switchover-subhead-b">主治医师：</view>{{clinic_laboratory}}</view>
+        <view class="switchover-headline switchover-headline-head">
+          <view class="switchover-headline-s">当前诊所：</view>{{clinic_name}}</view>
+        <view class="switchover-subhead switchover-subhead-head">
+          <view class="switchover-subhead-b">主治医师：</view>{{clinic_laboratory}}</view>
       </view>
     </view>
     <navigator open-type="reLaunch" url="/pages/index/index?clinic_id={{value.clinic_id}}&clinic_name={{value.clinic_name}}&clinic_laboratory={{value.clinic_laboratory}}" wx:for="{{clinicList}}" wx:for-index="key" wx:for-item="value">
-    <view class="switchover-item {{clinic_id==value.clinic_id?'switchover-item-hover':''}}">
-      <view class="switchover-headline">{{value.clinic_name}}</view>
-      <view class="switchover-subhead"><view class="switchover-subhead-b">科室：</view>{{value.clinic_laboratory}}</view>
-      <view class="switchover-right switchover-right-arrows">切换</view>
-    </view>
+      <view class="switchover-item {{clinic_id==value.clinic_id?'switchover-item-hover':''}}">
+        <view class="switchover-headline">{{value.clinic_name}}</view>
+        <view class="switchover-subhead">
+          <view class="switchover-subhead-b">科室：</view>{{value.clinic_laboratory}}</view>
+        <view class="switchover-right switchover-right-arrows">切换</view>
+      </view>
     </navigator>
   </view>
 
