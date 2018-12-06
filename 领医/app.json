@@ -1,6 +1,8 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/addPatient/addPatient",
+    "pages/PatientList/PatientList",
     "pages/selsectPatient/selsectPatient",
     "pages/lookCase/lookCase",
     "pages/prescription/prescription",
@@ -8,7 +10,7 @@
     "pages/my/doctorRes/doctorRes",
     "pages/my/my",
     "pages/case/case",
-    
+    "pages/Registration/Registration",
     "pages/my/doctor/doctor",
     "pages/chat/chat",
    

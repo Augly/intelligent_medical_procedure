@@ -1,4 +1,4 @@
-// pages/my/my.js
+// pages/PatientList/PatientList.js
 Page({
 
   /**
@@ -63,22 +63,12 @@ Page({
   onShareAppMessage: function () {
 
   },
-  toPatient(){
-    //就诊人管理
+  addUser(event){
     wx.navigateTo({
-      url: '/pages/PatientList/PatientList',
+      url: '/pages/addPatient/addPatient?type=' + event.currentTarget.dataset.type,
       success: function(res) {},
       fail: function(res) {},
       complete: function(res) {},
     })
   },
-  toRegistration(){
-    //挂号列表
-    wx.navigateTo({
-      url: '/pages/Registration/Registration',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
-    })
-  }
 })

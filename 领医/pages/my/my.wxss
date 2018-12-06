@@ -84,3 +84,10 @@ text-indent: 30rpx;
   font-size: 24rpx;
   color: rgba(153, 153, 153, 1);
 }
+
+.go{
+  width: 18rpx;
+  height: 32rpx;
+  background-color: red;
+  margin-left: auto;
+}

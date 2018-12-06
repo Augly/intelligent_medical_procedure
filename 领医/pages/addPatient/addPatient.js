@@ -1,18 +1,21 @@
-// pages/my/my.js
+// pages/addPatient/addPatient.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    statusType:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options)
+    this.setData({
+      statusType:options.type
+    })
   },
 
   /**
@@ -62,23 +65,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  toPatient(){
-    //就诊人管理
-    wx.navigateTo({
-      url: '/pages/PatientList/PatientList',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
-    })
-  },
-  toRegistration(){
-    //挂号列表
-    wx.navigateTo({
-      url: '/pages/Registration/Registration',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
-    })
   }
 })

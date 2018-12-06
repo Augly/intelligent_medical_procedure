@@ -25,22 +25,23 @@
       <view class='itemmintitle'>昵称</view>
     </view>
   </view>
-  <view class='item'>
+  <view class='item' bindtap='toRegistration'>
     <view class='left'>
       <image class='icon'></image>
-      <view class='itemTitle'>我的昵称</view>
+      <view class='itemTitle'>挂号列表</view>
     </view>
     <view class='right'>
-      <view class='itemmintitle'>昵称</view>
+      <view class='go'></view>
     </view>
   </view>
-  <view class='item'>
+  <view class='item' bindtap='toPatient'>
     <view class='left'>
       <image class='icon'></image>
-      <view class='itemTitle'>我的昵称</view>
+      <view class='itemTitle'>就诊人管理</view>
     </view>
     <view class='right'>
-      <view class='itemmintitle'>昵称</view>
+      <!-- <view class='itemmintitle'>昵称</view> -->
+      <view class='go'></view>
     </view>
   </view>
   <view class='item'>

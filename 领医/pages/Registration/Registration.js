@@ -1,11 +1,11 @@
-// pages/my/my.js
+// pages/Registration/Registration.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    statusType: 'waitIng'
   },
 
   /**
@@ -63,22 +63,17 @@ Page({
   onShareAppMessage: function () {
 
   },
-  toPatient(){
-    //就诊人管理
-    wx.navigateTo({
-      url: '/pages/PatientList/PatientList',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
+  waitIng(){
+    this.setData({
+      statusType: 'waitIng'
     })
   },
-  toRegistration(){
-    //挂号列表
-    wx.navigateTo({
-      url: '/pages/Registration/Registration',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
+  patiented(){
+    this.setData({
+      statusType: 'patiented'
     })
+  },
+  toEvent(){
+    console.log('去评价')
   }
 })

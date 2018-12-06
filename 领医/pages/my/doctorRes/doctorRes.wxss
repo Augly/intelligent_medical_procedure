@@ -6,7 +6,7 @@ page {
 
 .wrap {
   height: 100%;
-  margin-top: 129rpx;
+  margin-top: 128rpx;
 }
 
 .item {
