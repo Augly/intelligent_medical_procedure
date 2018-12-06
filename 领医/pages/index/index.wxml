@@ -24,7 +24,7 @@
       <view class="kim-name">预约挂号</view>
     </view>
     </navigator>
-    <view class="kim-item">
+    <view class="kim-item" bindtap='toMydoctor'>
       <view class="kim-icon"></view>
       <view class="kim-name">我的医生</view>
     </view>

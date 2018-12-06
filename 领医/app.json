@@ -1,20 +1,16 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/my/doctorRes/doctorRes",
+    "pages/my/my",
     "pages/case/case",
-   
     "pages/my/doctor/doctor",
     "pages/chat/chat",
    
-    
-    
-    
-    "pages/index/index",
     "pages/index/switchover/switchover",
     "pages/index/message/message",
     "pages/login/index",
     "pages/index/message",
-    
     "pages/index/switchover"
   ],
   "window":{
@@ -36,7 +32,7 @@
           "selectedIconPath": "images/tab_x_case.png"
         },
         {
-          "pagePath": "pages/case/case",
+          "pagePath": "pages/my/my",
           "text": "我的",
           "iconPath": "images/tab_my.png",
           "selectedIconPath": "images/tab_x_my.png"

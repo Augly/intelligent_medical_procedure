@@ -14,7 +14,14 @@ Page({
     clinic_name: '',
     clinic_laboratory: '',
   },
-
+  toMydoctor(){
+    wx.navigateTo({
+      url: '/pages/my/doctor/doctor',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
   onLoad: function (options) {
     if (options.clinic_id) {
       app.clinic_id = options.clinic_id;

@@ -1,4 +1,4 @@
-// pages/my/doctor/doctor.js
+// pages/my/my.js
 Page({
 
   /**
@@ -62,13 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  toRes(){
-    wx.navigateTo({
-      url: '/pages/my/doctorRes/doctorRes',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
-    })
   }
 })
